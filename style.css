@@ -1,0 +1,135 @@
+:root{
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_gray: hsl(0, 0%, 59%);
+}
+
+body{
+  
+  background-color: var(--Dark_cyan);
+  font-family: Kumbh Sans;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card{
+  width: 350px;
+  height: 385px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.upper{
+  height: 150px;
+  width: 350px;
+}
+
+.image{
+  background-image: url('images/image-victor.jpg');
+  height: 100px;
+  width: 100px;
+  border-radius: 55px;
+  border: 5px solid white;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 100px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.name{
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.country{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.line{
+  width: 350px;
+  color: var(--Dark_gray);
+  opacity: 0.2;
+}
+
+.stats{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.stats p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.bold{
+  font-weight: 700;
+  color: var(--Very_dark_desaturated_blue);
+}
+
+.age{
+  color: var(--Dark_grayish_blue);
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.non-bold{
+  color: var(--Dark_grayish_blue);
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+.country{
+  color: var(--Dark_grayish_blue);
+}
+
+@media (max-width: 375px){
+  .card{
+    height: 450px;
+    width: 300px;
+  }
+
+  .line{
+    width: 300px;
+  }
+
+  .upper{
+    width: 300px;
+  }
+
+}
