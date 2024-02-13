@@ -9,13 +9,19 @@ body{
   
   background-color: var(--Dark_cyan);
   font-family: Kumbh Sans;
+  /* background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh; */
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 }
 
 .container{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 98vh;
 }
 
 .card{
